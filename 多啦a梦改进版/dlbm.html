@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>多啦a梦</title>
+<link href="css/public.css" rel="stylesheet" type="text/css">
+<style>
+#tou{width:318px;height:300px;border-radius:50%;border:2px solid #000;background:#0183a7;margin:0 auto;margin-top:20px;position:relative;z-index:10;}
+#tou *{position:absolute;}
+.lian{width:264px;height:200px;border-radius:50%;border:2px solid #000;background:#fff;left:0;right:0;margin:auto;bottom:10px;}
+.yan-l{width:72px;height:84px;border:2px solid #000;background:#fff;border-radius:40%;right:50%;top:-34px;margin-right:-1px;}
+.yan-l i{width:15px;height:15px;background:#000;right:11px;bottom:15px;border-radius:50%;}
+.yan-r{width:72px;height:84px;border:2px solid #000;background:#fff;border-radius:40%;left:50%;top:-34px;margin-left:-1px;}
+.yan-r i{width:15px;height:15px;background:#000;left:11px;bottom:15px;border-radius:50%;}
+.yan-r:hover i{transform:scale(2);}
+.yan-l:hover i{transform:scale(2);}
+.bi{width:32px;height:32px;border:2px solid #000;border-radius:50%;left:0;right:0;margin:auto;top:41px;background:radial-gradient(circle at 68% 32%,#fff 1%,#fff 10%,#ca3e01 30%,#ca3e01 10%);}
+.zui{width:172px;height:36px;border:2px solid #000;background:#fff;
+border-radius:0 0 50% 50%/0 0 40px 40px;left:0;right:0;margin:auto;bottom:30px;}
+.kouzhao{height:2px;width:176px;background:#fff;left:0;right:0;margin:auto;bottom:68px;}
+.renzhong{width:3px;height:94px;background:#000;left:0;right:0;margin:auto;top:76px;}
+.xu{width:60px;height:2px;background:#000;top:94px;}
+.xu.l{right:70%;transform-origin:right;}
+.xu.r{left:70%;transform-origin:left;}
+.xu.l.l1,.xu.r.r1{top:84px;}
+.xu.l.l3,.xu.r.r3{top:104px;}
+
+.xu.l.l1,.xu.r.r3{transform:rotate(15deg);}
+.xu.l.l3,.xu.r.r1{transform:rotate(-15deg);}
+
+
+
+#bo{width:230px;height:30px;border-radius:8px;border:2px solid #000;background:#a22000;margin:0 auto;margin-top:-36px;position:relative;z-index:1000;}
+.gua{width:40px;height:40px;border-radius:50%;border:2px solid #000;background:#f5ed26;
+position:relative;margin-left:93px;margin-top:7px;overflow:hidden;}
+.gua .top{width:36px;height:2px;border:2px solid #333333;margin-top:10px;}
+.gua .center{width:12px;height:12px;margin-top:4px;background:#000;border-radius:50%;margin-left:14px;}
+.gua .bottom{width:4px;height:11px;background:#000;margin-left:18px;}
+
+
+#shen{width:220px;height:160px;border:2px solid #000;background:#0183a7;margin:0 auto;position:relative;margin-top:-2px;}
+.du{width:170px;height:170px;border-radius:50%;background:#fff;border:2px solid #000;margin:0 auto;margin-top:-50px;position:relative;}
+.dai{position:absolute;width:130px;height:70px;left:18px;bottom:18px;border:2px solid #000;border-radius:0 0 70px 70px;}
+.dai img{position:absolute;left:40px;top:10px;width:30px;height:50px;opacity:0;}
+.dai:hover img{left:300px;top:-100px;transform:rotate(360deg) scale(3);opacity:1;transition:2s;}
+.ge{width:50px;height:80px;position:absolute;background:#0183a7;background:#0089ad;border:2px solid #000;border-top:none;}
+.ge-l{transform-origin:right;transform:rotate(60deg);top:20px;left:-66px;} 
+.ge-r{transform-origin:left;transform:rotate(-60deg);top:20px;right:-66px;}
+
+.xian-l{width:23px;height:30px;position:absolute;left:-2px;top:25px;z-index:900;border-left:2px solid #000;background:#0183a7;}
+.xian-r{width:23px;height:30px;position:absolute;right:-2px;top:25px;z-index:900;border-right:2px solid #000;background:#0183a7;}
+
+.shou{width:60px;height:60px;position:absolute;z-index:900;border-radius:50%;border:2px solid #000;background:#fff;}
+.shou-l{left:-106px;top:33px;}
+.shou-r{right:-106px;top:33px;}
+
+.gu{width:20px;height:10px;position:absolute;z-index:900;border:2px solid #000;border-radius:10px 10px 0 0;border-bottom:2px solid #fff;bottom:-2px;left:100px;background:#fff;}
+
+.jiao{width:124px;height:30px;border:2px solid #000;background:#fefefe;border-radius:20px 15px 15px 10px;position:absolute;z-index:900;}
+.jiao-l{left:-20px;bottom:-32px;}
+.jiao-r{right:-20px;bottom:-32px;}
+
+
+</style>
+</head>
+<body>
+
+
+<div id="tou">
+	<div class="lian">   	
+        <div class=" yan-l"><i></i></div>
+        <div class=" yan-r"><i></i></div>
+        <div class="bi"></div>
+        <div class="zui"></div>
+        <div class="kouzhao">
+        </div>
+        <div class="renzhong"></div>
+        
+        <div class="xu l l1"></div>
+        <div class="xu l"></div>
+        <div class="xu l l3"></div>
+        <div class="xu r r1"></div>
+        <div class="xu r"></div>
+        <div class="xu r r3"></div>
+	</div>
+</div>
+<div id="bo">
+	<div class="gua">
+    	<div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>    
+</div>
+<div id="shen">
+	<div class="du">
+    	<div class="dai">
+        	<img src="images/t1.png"/>
+        </div>
+    </div>
+    <div class="ge ge-l"></div> 
+    <div class="ge ge-r"></div>
+    <div class="xian-l"></div>
+    <div class="xian-r"></div>
+    <div class="shou shou-l"></div>
+    <div class="shou shou-r"></div>
+    <div class="gu"></div> 
+    <div class="jiao jiao-l"></div>
+    <div class="jiao jiao-r"></div>  
+</div>
+
+
+
+
+
+</body>
+</html>
