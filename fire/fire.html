@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            background: url(./bg.jpg) no-repeat;
+            background-size:cover;
+            overflow: hidden; 
+        }
+        img{width: 15px;height:15px;position: absolute}
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript" src="./public.js"></script>
+    <script>
+        function Fire(){
+            var that=this;
+            this.createfire=function(){
+                this.fire=document.createElement('img');
+                this.fire.src="./1.jpg";
+                this.fire.style.left=tool.ranNum(0,document.documentElement.clientWidth-this.fire.offsetWidth) +"px";
+                this.fire.style.top=tool.ranNum(0,document.documentElement.clientHeight-this.fire.offsetHeight)+"px";
+                document.body.appendChild(this.fire)
+                return this
+            }
+            this.move=function(){//移动
+                move(this.fire,{
+                    left:tool.ranNum(0,document.documentElement.clientWidth-this.fire.offsetWidth),
+                    top:tool.ranNum(0,document.documentElement.clientHeight-this.fire.offsetHeight)
+                },function(){
+                    that.move();
+                });
+            }
+        }
+        for(var i=0;i<tool.ranNum(30,60);i++){
+				var f1=new Fire().createfire().move();//链式运动
+				/*var f1=new Fire();
+				f1.createfire();
+				f1.move();*/
+			}
+    </script>
+</body>
+
+</html>
